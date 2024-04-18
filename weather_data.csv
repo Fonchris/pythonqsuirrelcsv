@@ -1,0 +1,23 @@
+day,temp,condition
+Monday,12,sunny
+Tuesday,14,rain
+Wednesday,15,rain
+Thursday,14,cloudy
+Friday,21,sunny
+Saturday,22,sunny
+Sunday,24,sunny
+Gray =0
+Black =0
+Cinnamon =0
+
+for position in range(len(colors)):
+    if colors[position] =="Gray":
+        Gray+=1
+    if colors[position] =="Black":
+        Black+=1
+    if colors[position] ==" Cinnamon":
+       Cinnamon+=1
+
+print(f"Gray:{Gray}, Black:{Black}, Cinnamon:{Cinnamon}")
+new_data_frame ={f"Gray":{Gray},"Black":{Black}," Cinnamon":{Cinnamon}}
+
